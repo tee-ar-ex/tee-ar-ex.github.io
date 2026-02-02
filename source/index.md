@@ -15,13 +15,14 @@ tractography have become a priority. To address these challenges, our community
 initiated a discussion to design a new file format and agreed to participate in
 its conception, development, and, if successful, its adoption.
 
-The goal of TRX is to become the first, community-driven, standard amongst
-tractography file formats. As with other file formats like NiFTI, we believe
-that TRX will serve the community well and the growing computational needs of
-our field. We encourage community members to consider early contributions to our
-proposal so as to ensure the new standard will cover the needs of the wider
-audience of software developers, toolboxes, and scientists. Our long-term plan
-is to integrate TRX within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem.
+The goal of TRX is to become the standard amongst tractography file formats. As
+with other file formats like NiFTI, we believe that TRX will serve the
+community well and the growing computational needs of our field. We encourage
+community members to consider early contributions to our proposal so as to
+ensure the new standard will cover the needs of the wider audience of software
+developers, toolboxes, and scientists. Our long-term plan is to integrate TRX
+within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/)
+ecosystem.
 
 ## Implementations
 
