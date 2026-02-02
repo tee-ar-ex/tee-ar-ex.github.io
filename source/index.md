@@ -21,15 +21,13 @@ that TRX will serve the community well and the growing computational needs of
 our field. We encourage community members to consider early contributions to our
 proposal so as to ensure the new standard will cover the needs of the wider
 audience of software developers, toolboxes, and scientists. Our long-term plan
-is to integrate TRX within the `Brain Imaging Data Structure (BIDS) <https://bids.neuroimaging.io/>`_ ecosystem.
+is to integrate TRX within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem.
 
 ## Implementations
 
 [*Python*](https://tee-ar-ex/trx-python)
 
 [*C++*](https://tee-ar-ex/trx-cpp)
-
-
 
 
 
