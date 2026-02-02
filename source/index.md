@@ -30,6 +30,11 @@ ecosystem.
 
 [*C++*](https://tee-ar-ex/trx-cpp)
 
+```{note}
+
+The TRX file-format started following [this discussion](https://github.com/nipy/nibabel/issues/942)
+
+```
 
 
 ```{eval-rst}
