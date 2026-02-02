@@ -1,6 +1,6 @@
 # TRX: A community-oriented file format for tractography
 
-## Rationale
+### Rationale
 
 File formats that store the results of computational tractography were typically
 developed within specific software packages. This approach has facilitated a
