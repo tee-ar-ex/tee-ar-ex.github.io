@@ -26,15 +26,15 @@ ecosystem.
 
 ## Implementations
 
-[*Python*](https://tee-ar-ex/trx-python)
+[*Python*](https://github.com/tee-ar-ex/trx-python)
 
-[*C++*](https://tee-ar-ex/trx-cpp)
+[*C++*](https://github.com/tee-ar-ex/trx-cpp)
 
-[*Rust*](https://tee-ar-ex/trx-rs)
+[*Rust*](https://github.com/tee-ar-ex/trx-rs)
 
-[*Javascript*](https://tee-ar-ex/trx-javascript)
+[*Javascript*](https://github.com/tee-ar-ex/trx-javascript)
 
-[*Pascal*](https://tee-ar-ex/trx-pascal)
+[*Pascal*](https://github.com/tee-ar-ex/trx-pascal)
 
 
 ```{note}
