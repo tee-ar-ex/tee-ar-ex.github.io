@@ -30,6 +30,13 @@ ecosystem.
 
 [*C++*](https://tee-ar-ex/trx-cpp)
 
+[*Rust*](https://tee-ar-ex/trx-rs)
+
+[*Javascript*](https://tee-ar-ex/trx-javascript)
+
+[*Pascal*](https://tee-ar-ex/trx-pascal)
+
+
 ```{note}
 
 The TRX file-format started following [this discussion](https://github.com/nipy/nibabel/issues/942)
