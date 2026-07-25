@@ -8,6 +8,7 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   build:
@@ -31,11 +32,19 @@ jobs:
       run: |
         make html
     - name: Upload site
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-pages-artifact@v4
       with:
-        name: site
         path: _build/html
-    - name: Publish docs to Github Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-        folder: _build/html
+
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

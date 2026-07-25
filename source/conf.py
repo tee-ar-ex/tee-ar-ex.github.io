@@ -17,7 +17,13 @@ author = 'The TRX developers'
 
 extensions = [
     "myst_parser",
+    "sphinxcontrib.bibtex",
     ]
+
+bibtex_bibfiles = ['references.bib']
+bibtex_default_style = 'plain'
+bibtex_reference_style = 'author_year'
+
 
 myst_enable_extensions = [
     "colon_fence",
