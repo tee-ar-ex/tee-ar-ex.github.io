@@ -1,6 +1,8 @@
 # TRX: A community-oriented file format for tractography
 
-### Rationale
+Welcome to the core documentation
+
+## Rationale
 
 File formats that store the results of computational tractography were typically
 developed within specific software packages. This approach has facilitated a
@@ -16,7 +18,7 @@ initiated a discussion to design a new file format and agreed to participate in
 its conception, development, and, if successful, its adoption.
 
 The goal of TRX is to become the standard amongst tractography file formats. As
-with other file formats like NIfTI, we believe that TRX will serve the
+with other file formats like NiFTI, we believe that TRX will serve the
 community well and the growing computational needs of our field. We encourage
 community members to consider early contributions to our proposal so as to
 ensure the new standard will cover the needs of the wider audience of software
@@ -35,13 +37,6 @@ ecosystem.
 [*Javascript*](https://github.com/tee-ar-ex/trx-javascript)
 
 [*Pascal*](https://github.com/tee-ar-ex/trx-pascal)
-
-
-```{note}
-
-The TRX file-format started following [this discussion](https://github.com/nipy/nibabel/issues/942)
-
-```
 
 
 ```{eval-rst}
