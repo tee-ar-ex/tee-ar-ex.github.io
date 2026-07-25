@@ -6,9 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'tee-ar-ex'
-copyright = '2026, TRX developers'
-author = 'TRX developers'
+from datetime import datetime as dt
+
+project = 'TRX'
+copyright = f'2021-{dt.now().year}, The TRX developers'
+author = 'The TRX developers'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -16,6 +18,15 @@ author = 'TRX developers'
 extensions = [
     "myst_parser",
     ]
+
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "fieldlist",
+    "html_image",
+    "tasklist",
+]
+myst_heading_anchors = 3
 
 templates_path = ['_templates']
 exclude_patterns = ['.DS_Store']
@@ -32,7 +43,7 @@ html_static_path = ['_static']
 html_logo = "_static/logo.png"
 
 html_theme_options = {
-    "secondary_sidebar_items": [],
+    "secondary_sidebar_items": ["page-toc", "edit-this-page", "sourcelink"],
     "use_edit_page_button": True,
     "icon_links": [
         {
