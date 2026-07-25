@@ -34,8 +34,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: site
-        path: build/html
+        path: _build/html
     - name: Publish docs to Github Pages
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        folder: build/html
+        folder: _build/html
