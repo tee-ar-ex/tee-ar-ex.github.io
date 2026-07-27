@@ -33,18 +33,6 @@ developers, toolboxes, and scientists. Our long-term plan is to integrate TRX
 within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/)
 ecosystem {cite:p}`Gorgolewski2016BIDS`.
 
-## Implementations
-
-[*Python*](https://github.com/tee-ar-ex/trx-python)
-
-[*C++*](https://github.com/tee-ar-ex/trx-cpp)
-
-[*Rust*](https://github.com/tee-ar-ex/trx-rs)
-
-[*Javascript*](https://github.com/tee-ar-ex/trx-javascript)
-
-[*Pascal*](https://github.com/tee-ar-ex/trx-pascal)
-
 
 ```{toctree}
 concepts

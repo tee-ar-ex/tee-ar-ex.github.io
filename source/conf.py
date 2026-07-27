@@ -67,3 +67,7 @@ html_context = {
     "github_version": "main",
     "doc_path": "source",
 }
+
+html_sidebars = {
+    "**": ["implementation-links.html"],
+}
