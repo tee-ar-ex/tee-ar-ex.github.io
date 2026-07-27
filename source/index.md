@@ -47,6 +47,10 @@ ecosystem {cite:p}`Gorgolewski2016BIDS`.
 
 
 ```{toctree}
+concepts
+specification
+design
+software
 history
 bib
 ```
