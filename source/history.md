@@ -1,6 +1,38 @@
 # The history of the TRX file format.
 
+## Origins
 
+The TRX format emerged in 2020 following
+[this discussion](https://github.com/nipy/nibabel/issues/942) on the nibabel
+repository, where the tractography community began conversations about a
+shared data format.
 
+## Community adoption and dissemination
 
-The TRX emerged in 2020 file-format started following [this discussion](https://github.com/nipy/nibabel/issues/942)
+TRX has been developed and advocated by researchers across many institutions
+and geographies. The format has been presented at conferences, workshops, and
+through technical developments.
+
+### Conferences and workshops
+
+- **OHBM 2021** (online) — initial presentation of the format
+- **OHBM 2022** (Glasgow) — in-person presentation
+- **OHBM 2023** — progress presented at the Open Science Room
+- **Tract Anat Retreat, Corsica, 2024** — presented and discussed at length
+- **DIPY online workshops, 2025 and 2026** — presented to trainees
+- **BRAIN CONNECTS gathering, Austin TX, 2025** — presented to the project
+
+### Institutional adoption
+
+- The NIH-funded **BIDS Connectivity project** incorporated TRX into its
+  proposal for extensions of BIDS to represent brain tractography.
+- The **International Society for Tractography Standardization Unit** has been
+  carrying this work forward.
+
+### Community note
+
+For a community service project that is not currently funded by any agency, the
+community around TRX has been exceptionally active in disseminating knowledge
+about the format. Technical developments to ease the burden of TRX adoption
+have also been remarkable, with the format now supported by many platforms and
+languages, as described in the [Software](software.md) page.
