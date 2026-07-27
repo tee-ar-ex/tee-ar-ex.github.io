@@ -1,33 +1,34 @@
 # Software
 
-TRX input and output is now also integrated into several analysis software
-libraries, including pyAFQ, Trekker, DIPY, QSIPrep, Surfice, SlicerDMRI,
-FSL, COMMIT, as well as the [brainlife.io](https://brainlife.io) online
-analysis platform and the [Niivue](https://niivue.com/) visualization
-library. It has been integrated as an external module in the Insight ToolKit
-(ITK), making it available for users of the popular ANTS registration
-framework. Integration into the widely used MRtrix software is currently in
-progress.
+TRX input and output is now integrated into several analysis software
+libraries:
 
 ## pyAFQ
 
 [pyAFQ](https://tractometry.org/pyAFQ) is a Python library for automated
-white matter tractography and tractometry.
+white matter tractography and tractometry. It uses TRX to parallelize and
+accelerate tractography, as well as to perform batched operations over
+groups of streamlines in ways that allow handling very large tractograms
+(>100M streamlines) on standard hardware.
 
 ## Trekker
 
 Trekker implements parallel transport tractography for generating geometrically
-smooth streamlines {cite:p}`Aydogan2021-ug`.
+smooth streamlines {cite:p}`Aydogan2021-ug`. It uses TRX
 
 ## DIPY
 
 [DIPY](https://dipy.org/) is a library for the analysis of diffusion MRI
-data {cite:p}`Garyfallidis2014-el`.
+data {cite:p}`Garyfallidis2014-el`. DIPY supports I/O in many different
+file formats, including TRX.
 
-## QSIPrep
+## QSIPrep & QSIRecon.
 
 QSIPrep is an integrative platform for preprocessing and reconstructing
-diffusion MRI data {cite:p}`Cieslak2021-ic`.
+diffusion MRI data {cite:p}`Cieslak2021-ic`. QSIPrep and its post-processing
+pipelines, implemented in QSIRecon advance the use of TRX as an interchange
+format, because they knit together functionality from many different software
+libraries.
 
 ## Surfice
 
@@ -38,26 +39,32 @@ streamlines, and connectomes {cite:p}`Rorden2025-zq`.
 
 SlicerDMRI is an open source diffusion MRI software for brain cancer
 research, implemented as an extension of 3D Slicer {cite:p}`Norton2017-yz`.
+It now supports use of TRX, through its C++ implementation.
 
 ## FSL
 
 [FSL](https://fsl.fmrib.ox.ac.uk/fsl/) is a comprehensive library of tools
-for functional MRI, structural MRI, and diffusion MRI analysis.
+for functional MRI, structural MRI, and diffusion MRI analysis. The FSLeyes
+viewer includes support for TRX as of its 1.20 version release.
 
 ## COMMIT
 
 COMMIT (Convex Optimization Modeling for Microstructure Informed Tractography)
-is a framework for microstructure-informed tractography.
+is a framework for microstructure-informed tractography. TRX support in
+COMMIT using its C++ implementation is currently work-in-progress.
 
 ## brainlife.io
 
 [brainlife.io](https://brainlife.io) is a decentralized and open-source cloud
-platform to support neuroscience research {cite:p}`Hayashi2024-zm`.
+platform to support neuroscience research {cite:p}`Hayashi2024-zm`. It uses
+TRX for streamline I/O.
 
 ## Niivue
 
 [Niivue](https://niivue.com/) is a WebGL-based visualization library for
-neuroimaging data, including tractography streamlines.
+neuroimaging data, including tractography streamlines. It uses the TRX
+features of TRX to display different groups (e.g., tracts) and their distinct
+properties.
 
 ## Insight ToolKit (ITK)
 
