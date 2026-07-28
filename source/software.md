@@ -1,7 +1,6 @@
 # Software
 
-TRX input and output is now integrated into several analysis software
-libraries:
+TRX is integrated into several software libraries:
 
 ## TRXViz
 
@@ -28,7 +27,7 @@ smooth streamlines {cite:p}`Aydogan2021-ug`. It uses TRX
 data {cite:p}`Garyfallidis2014-el`. DIPY supports I/O in many different
 file formats, including TRX.
 
-## QSIPrep & QSIRecon.
+## QSIPrep & QSIRecon
 
 QSIPrep is an integrative platform for preprocessing and reconstructing
 diffusion MRI data {cite:p}`Cieslak2021-ic`. QSIPrep and its post-processing
@@ -43,9 +42,9 @@ streamlines, and connectomes {cite:p}`Rorden2025-zq`.
 
 ## SlicerDMRI
 
-SlicerDMRI is an open source diffusion MRI software for brain cancer
-research, implemented as an extension of 3D Slicer {cite:p}`Norton2017-yz`.
-It now supports use of TRX, through its C++ implementation.
+SlicerDMRI is an open source diffusion MRI software, implemented as an
+extension of 3D Slicer {cite:p}`Norton2017-yz`. It now supports use of TRX,
+through its C++ implementation.
 
 ## FSL
 
