@@ -69,5 +69,5 @@ html_context = {
 }
 
 html_sidebars = {
-    "**": ["implementation-links.html"],
+    "**": ["sidebar-nav-bs.html", "implementation-links.html"],
 }
