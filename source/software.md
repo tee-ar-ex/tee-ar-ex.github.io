@@ -19,7 +19,8 @@ groups of streamlines in ways that allow handling very large tractograms
 ## Trekker
 
 Trekker implements parallel transport tractography for generating geometrically
-smooth streamlines {cite:p}`Aydogan2021-ug`. It uses TRX
+smooth streamlines {cite:p}`Aydogan2021-ug`. It uses the TRX C++ implementation
+for I/O.
 
 ## DIPY
 
@@ -67,16 +68,15 @@ TRX for streamline I/O.
 ## Niivue
 
 [Niivue](https://niivue.com/) is a WebGL-based visualization library for
-neuroimaging data, including tractography streamlines. It uses the TRX
-features of TRX to display different groups (e.g., tracts) and their distinct
-properties.
+neuroimaging data, including tractography streamlines. It uses features of TRX
+to display different groups (e.g., tracts) and their distinct properties.
 
 ## DWI2TRX
 
 The [DWI2TRX](https://tee-ar-ex.github.io/dwi2trx/) web application uses
 WASM-based dcm2niix and niimath as well as WebGPU-based NiiVue, mindgrab and
 GPUstreamlines to perform a minimal processing pipeline that generates a TRX
-tractography from NiFTI/bval/bvec files or from a directory of dicoms. All
+tractography from NifTI/bval/bvec files or from a directory of dicoms. All
 computations are conducted client-side on the users computer, and no data is
 uploaded to any remote server. It works on any web enabled device that supports
 the full WebGPU standard.
