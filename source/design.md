@@ -122,8 +122,7 @@ is already in world coordinates.
 
 TRX supports optional ZIP compression:
 
-- **Whole-file compression** (`.trx.gz`) is simple and compatible with
-  high-performance tools like `pigz` and `libdeflate`.
+- **Whole-archive compression** (`ZIP_DEFLATE`) is simple and widely supported.
 - **Per-array compression** is possible within the ZIP structure, allowing
   random access to uncompressed arrays while compressing others.
 - **Byte shuffling** before compression can improve ratios for structured data
