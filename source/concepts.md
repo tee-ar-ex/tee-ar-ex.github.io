@@ -9,7 +9,7 @@ A TRX file is a ZIP archive (or on-disk directory) whose layout directly
 encodes its data model:
 
 - `header.json` — spatial metadata
-- `positions.<dtype>` — all streamline vertices in a single flat array
+- `positions.<dim>.<dtype>` — all streamline vertices in a single flat array
 - `offsets.<dtype>` — prefix-sum index from streamlines into positions
 - `dpv/<name>.<dtype>` — per-vertex metadata arrays
 - `dps/<name>.<dtype>` — per-streamline metadata arrays

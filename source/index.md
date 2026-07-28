@@ -9,7 +9,7 @@ Welcome to the documentation of the TRX file format (pronounced "tee-ar-ex" or
 "tracks").
 
 The goal of TRX is to become the standard file format. As with other file
-formats like NiFTI, we believe that TRX will serve the community well and the
+formats like NIfTI, we believe that TRX will serve the community well and the
 growing computational needs of our field. We encourage community members to
 consider early contributions to our proposal so as to ensure the new standard
 will cover the needs of the wider audience of software developers, toolboxes,

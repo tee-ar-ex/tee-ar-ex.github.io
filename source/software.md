@@ -76,9 +76,9 @@ to display different groups (e.g., tracts) and their distinct properties.
 The [DWI2TRX](https://tee-ar-ex.github.io/dwi2trx/) web application uses
 WASM-based dcm2niix and niimath as well as WebGPU-based NiiVue, mindgrab and
 GPUstreamlines to perform a minimal processing pipeline that generates a TRX
-tractography from NifTI/bval/bvec files or from a directory of dicoms. All
-computations are conducted client-side on the users computer, and no data is
-uploaded to any remote server. It works on any web enabled device that supports
+tractography from NIfTI/bval/bvec files or from a directory of DICOMs. All
+computations are conducted client-side on the user's computer, and no data is
+uploaded to any remote server. It works on any web-enabled device that supports
 the full WebGPU standard.
 
 ## Insight ToolKit (ITK)
