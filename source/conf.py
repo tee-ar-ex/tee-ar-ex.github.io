@@ -54,6 +54,12 @@ html_theme_options = {
     "use_edit_page_button": True,
     "icon_links": [
         {
+            "name": "Home",
+            "url": "index.html",
+            "icon": "fa-solid fa-home",
+            "attributes": {"target": "_self"},
+        },
+        {
             "name": "GitHub",
             "url": "https://github.com/tee-ar-ex/",
             "icon": "fab fa-github-square",
