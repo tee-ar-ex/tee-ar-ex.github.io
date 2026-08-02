@@ -130,3 +130,11 @@ TRX supports optional ZIP compression:
 
 The format does not mandate a specific compression strategy, leaving this as
 an implementation choice.
+
+In addition, a generic compression approach can be combined with
+tractography-specific compression approaches, such as linearization
+{cite:p}`Rheault2017`.
+
+Taken together, TRX provides multiple options to save storage space, that can
+also be combined: down-casting, generic compression algorithms, and
+tractography-specific compression.
