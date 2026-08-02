@@ -1,4 +1,4 @@
-# The history of the TRX file format.
+# Timeline of TRX
 
 ## Origins
 
