@@ -18,6 +18,7 @@ author = 'The TRX developers'
 extensions = [
     "myst_parser",
     "sphinxcontrib.bibtex",
+    "sphinx_design",
     ]
 
 bibtex_bibfiles = ['references.bib']

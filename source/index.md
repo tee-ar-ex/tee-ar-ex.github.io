@@ -18,6 +18,8 @@ Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem
 {cite:p}`Gorgolewski2016BIDS`.
 
 
+````{dropdown} Table of Contents
+
 ```{toctree}
 concepts
 specification
@@ -26,3 +28,4 @@ software
 history
 bib
 ```
+````
