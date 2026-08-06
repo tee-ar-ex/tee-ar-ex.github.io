@@ -1,0 +1,509 @@
+@ARTICLE{Rheault2017,
+  title     = "Visualization, interaction and tractometry: Dealing with millions
+               of streamlines from diffusion {MRI} tractography",
+  author    = "Rheault, Francois and Houde, Jean-Christophe and Descoteaux,
+               Maxime",
+  journal   = "Front. Neuroinform.",
+  publisher = "Frontiers Media SA",
+  volume    =  11,
+  pages     =  42,
+  abstract  = "Recently proposed tractography and connectomics approaches often
+               require a very large number of streamlines, in the order of
+               millions. Generating, storing and interacting with these datasets
+               is currently quite difficult, since they require a lot of space
+               in memory and processing time. Compression is a common approach
+               to reduce data size. Recently such an approach has been proposed
+               consisting in removing collinear points in the streamlines.
+               Removing points from streamlines results in files that cannot be
+               robustly post-processed and interacted with existing tools, which
+               are for the most part point-based. The aim of this work is to
+               improve visualization, interaction and tractometry algorithms to
+               robustly handle compressed tractography datasets. Our proposed
+               improvements are threefold: (i) An efficient loading procedure to
+               improve visualization (reduce memory usage up to 95\% for a 0.2
+               mm step size); (ii) interaction techniques robust to compressed
+               tractograms; (iii) tractometry techniques robust to compressed
+               tractograms to eliminate biased in tract-based statistics. The
+               present work demonstrates the need of correctly handling
+               compressed streamlines to avoid biases in future tractometry and
+               connectomics studies.",
+  month     =  jun,
+  year      =  2017,
+  keywords  = "MI-Brain; compression; connectomics; diffusion MRI;
+               linearization; streamlines; tractography; tractometry"
+}
+
+
+@ARTICLE{Gorgolewski2016BIDS,
+  title     = "The brain imaging data structure, a format for organizing and
+               describing outputs of neuroimaging experiments",
+  author    = "Gorgolewski, Krzysztof J and Auer, Tibor and Calhoun, Vince D and
+               Cameron Craddock, R and Das, Samir and Duff, Eugene P and
+               Flandin, Guillaume and Ghosh, Satrajit S and Glatard, Tristan and
+               Halchenko, Yaroslav O and Handwerker, Daniel A and Hanke, Michael
+               and Keator, David and Li, Xiangrui and Michael, Zachary and
+               Maumet, Camille and Nolan Nichols, B and Nichols, Thomas E and
+               Pellman, John and Poline, Jean-Baptiste and Rokem, Ariel and
+               Schaefer, Gunnar and Sochat, Vanessa and Triplett, William and
+               Turner, Jessica A and Varoquaux, Gaël and Poldrack, Russell A",
+  journal   = "Scientific data",
+  publisher = "Nature Publishing Group",
+  volume    =  3,
+  number    =  1,
+  pages     = "1--9",
+  abstract  = "The development of magnetic resonance imaging (MRI) techniques
+               has defined modern neuroimaging. Since its inception, tens of
+               thousands of studies using techniques such as functional MRI and
+               diffusion weighted imaging have allowed for the non-invasive
+               study of the brain. Despite the fact that MRI is routinely used
+               to obtain data for neuroscience research, there has been no
+               widely adopted standard for organizing and describing the data
+               collected in an imaging experiment. This renders sharing and
+               reusing data (within or between labs) difficult if not impossible
+               and unnecessarily complicates the application of automatic
+               pipelines and quality assurance protocols. To solve this problem,
+               we have developed the Brain Imaging Data Structure (BIDS), a
+               standard for organizing and describing MRI datasets. The BIDS
+               standard uses file formats compatible with existing software,
+               unifies the majority of practices already …",
+  month     =  jun,
+  year      =  2016
+}
+
+
+@ARTICLE{Descoteaux2025Millenium,
+  title         = "Millennium Pathways for Tractography: 40 grand challenges to
+                   shape the future of tractography",
+  author        = "Descoteaux, Maxime and Schilling, Kurt G and Aydogan, Dogu
+                   Baran and Beaulieu, Christian and Borra, Elena and
+                   Chamberland, Maxime and Daducci, Alessandro and Luca, Alberto
+                   De and Dell'Acqua, Flavio and Dubois, Jessica and Dyrby, Tim
+                   B and Farquharson, Shawna and Forkel, Stephanie and Froeling,
+                   Martijn and Griffa, Alessandra and Grotheer, Mareike and
+                   Guevara, Pamela and Haber, Suzanne N and Jangir, Vinod Kumar
+                   and Leemans, Alexander and Lefebvre, Joël and Lin, Ching-Po
+                   and Little, Graham and Zac Lo, Chun-Yi and Maffei, Chiara and
+                   Mayberg, Helen S and McNab, Jennifer A and Mukherjee, Pratik
+                   and O'Donnell, Lauren J and Parent, Martin and Pierpaoli,
+                   Carlo and Rheault, Francois and Rockland, Kathleen S and
+                   Roebroeck, Alard and Rokem, Ariel and Rushmore, R Jarrett and
+                   Sarubbo, Silvio and Schiavi, Simona and Sotiropoulos,
+                   Stamatios N and Szczupak, Diego and de Schotten, Michel
+                   Thiebaut and Tournier, J-Donald and Vergani, Francesco and
+                   Yuan-Mou Yang, Joseph and Zhang, Fan and Jones, Derek and
+                   Petit, Laurent",
+  journal       = "ArXiv",
+  abstract      = "In the spirit of the historic Millennium Prize Problems that
+                   heralded a new era for mathematics, the newly formed
+                   International Society for Tractography (IST) has launched the
+                   Millennium Pathways for Tractography, a community-driven
+                   roadmap designed to shape the future of the field. Conceived
+                   during the inaugural Tract-Anat Retreat, this initiative
+                   reflects a collective vision for advancing tractography over
+                   the coming decade and beyond. The roadmap consists of 40
+                   grand challenges, developed by international experts and
+                   organized into seven categories spanning three overarching
+                   themes: neuroanatomy, tractography methods, and clinical
+                   applications. By defining shared short-, medium-, and
+                   long-term goals, these pathways provide a structured
+                   framework to confront fundamental limitations, promote
+                   rigorous validation, and accelerate the translation of
+                   tractography into a robust tool for neuroscience and
+                   medicine. Ultimately, the Millennium Pathways aim to guide
+                   and inspire future research and collaboration, ensuring the
+                   continued scientific and clinical relevance of tractography
+                   well into the future.",
+  month         =  sep,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.med-ph",
+  language  = "en"
+}
+
+
+@ARTICLE{Norton2017-yz,
+  title     = "{SlicerDMRI}: Open source diffusion {MRI} software for brain
+               cancer research",
+  author    = "Norton, Isaiah and Essayed, Walid Ibn and Zhang, Fan and Pujol,
+               Sonia and Yarmarkovich, Alex and Golby, Alexandra J and
+               Kindlmann, Gordon and Wassermann, Demian and Estepar, Raul San
+               Jose and Rathi, Yogesh and Pieper, Steve and Kikinis, Ron and
+               Johnson, Hans J and Westin, Carl-Fredrik and O'Donnell, Lauren J",
+  journal   = "Cancer Res.",
+  publisher = "American Association for Cancer Research (AACR)",
+  volume    =  77,
+  number    =  21,
+  pages     = "e101--e103",
+  abstract  = "Diffusion MRI (dMRI) is the only noninvasive method for mapping
+               white matter connections in the brain. We describe SlicerDMRI, a
+               software suite that enables visualization and analysis of dMRI
+               for neuroscientific studies and patient-specific anatomic
+               assessment. SlicerDMRI has been successfully applied in multiple
+               studies of the human brain in health and disease, and here, we
+               especially focus on its cancer research applications. As an
+               extension module of the 3D Slicer medical image computing
+               platform, the SlicerDMRI suite enables dMRI analysis in a
+               clinically relevant multimodal imaging workflow. Core SlicerDMRI
+               functionality includes diffusion tensor estimation, white matter
+               tractography with single and multi-fiber models, and dMRI
+               quantification. SlicerDMRI supports clinical DICOM and research
+               file formats, is open-source and cross-platform, and can be
+               installed as an extension to 3D Slicer (www.slicer.org). Cancer
+               Res; 77(21); e101-3. ©2017 AACR.",
+  month     =  nov,
+  year      =  2017,
+  language  = "en",
+  DOI       = "https://doi.org/10.1158/0008-5472.CAN-17-0332",
+}
+
+
+@ARTICLE{Rorden2025-zq,
+  title     = "Surfice: visualizing neuroimaging meshes, tractography
+               streamlines and connectomes",
+  author    = "Rorden, Christopher",
+  journal   = "Nat. Methods",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  22,
+  number    =  8,
+  pages     = "1615--1616",
+  month     =  aug,
+  year      =  2025,
+  language  = "en",
+  DOI       = "https://doi.org/10.1038/s41592-025-02764-6"
+}
+
+
+@ARTICLE{Aydogan2021-ug,
+  title     = "Parallel transport tractography",
+  author    = "Aydogan, Dogu Baran and Shi, Yonggang",
+  journal   = "IEEE Trans. Med. Imaging",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    =  40,
+  number    =  2,
+  pages     = "635--647",
+  abstract  = "Tractography is an important technique that allows the in vivo
+               reconstruction of structural connections in the brain using
+               diffusion MRI. Although tracking algorithms have improved during
+               the last two decades, results of validation studies and
+               international challenges warn about the reliability of
+               tractography and point out the need for improved algorithms. In
+               propagation-based tracking, connections have traditionally been
+               modeled as piece-wise linear segments. In this work, we propose a
+               novel propagation-based tracker that is capable of generating
+               geometrically smooth ( C1 ) curves using parallel transport
+               frames. Notably, our approach does not increase the complexity of
+               the propagation problem that remains two-dimensional. Moreover,
+               our tracker has a novel mechanism to reduce noise related
+               propagation errors by incorporating topographic regularity of
+               connections, a neuroanatomic property of many brain pathways. We
+               ran extensive experiments and compared our approach against
+               deterministic and other probabilistic algorithms. Our experiments
+               on FiberCup and ISMRM 2015 challenge datasets as well as on 56
+               subjects of the Human Connectome Project show highly promising
+               results both visually and quantitatively. Open-source
+               implementations of the algorithm are shared publicly.",
+  month     =  feb,
+  year      =  2021,
+  language  = "en",
+  DOI       = "https://doi.org/10.1109/tmi.2020.3034038"
+}
+
+
+@ARTICLE{Hayashi2024-zm,
+  title    = "brainlife.io: a decentralized and open-source cloud platform to
+              support neuroscience research",
+  author   = "Hayashi, Soichi and Caron, Bradley A and Heinsfeld, Anibal Sólon
+              and Vinci-Booher, Sophia and McPherson, Brent and Bullock, Daniel
+              N and Bertò, Giulia and Niso, Guiomar and Hanekamp, Sandra and
+              Levitas, Daniel and Ray, Kimberly and MacKenzie, Anne and Avesani,
+              Paolo and Kitchell, Lindsey and Leong, Josiah K and
+              Nascimento-Silva, Filipi and Koudoro, Serge and Willis, Hanna and
+              Jolly, Jasleen K and Pisner, Derek and Zuidema, Taylor R and
+              Kurzawski, Jan W and Mikellidou, Kyriaki and Bussalb, Aurore and
+              Chaumon, Maximilien and George, Nathalie and Rorden, Christopher
+              and Victory, Conner and Bhatia, Dheeraj and Aydogan, Dogu Baran
+              and Yeh, Fang-Cheng F and Delogu, Franco and Guaje, Javier and
+              Veraart, Jelle and Fischer, Jeremy and Faskowitz, Joshua and
+              Fabrega, Ricardo and Hunt, David and McKee, Shawn and Brown, Shawn
+              T and Heyman, Stephanie and Iacovella, Vittorio and Mejia, Amanda
+              F and Marinazzo, Daniele and Craddock, R Cameron and Olivetti,
+              Emanuale and Hanson, Jamie L and Garyfallidis, Eleftherios and
+              Stanzione, Dan and Carson, James and Henschel, Robert and Hancock,
+              David Y and Stewart, Craig A and Schnyer, David and Eke, Damian O
+              and Poldrack, Russell A and Bollmann, Steffen and Stewart, Ashley
+              and Bridge, Holly and Sani, Ilaria and Freiwald, Winrich A and
+              Puce, Aina and Port, Nicholas L and Pestilli, Franco",
+  journal  = "Nat. Methods",
+  volume   =  21,
+  number   =  5,
+  pages    = "809--813",
+  abstract = "Neuroscience is advancing standardization and tool development to
+              support rigor and transparency. Consequently, data pipeline
+              complexity has increased, hindering FAIR (findable, accessible,
+              interoperable and reusable) access. brainlife.io was developed to
+              democratize neuroimaging research. The platform provides data
+              standardization, management, visualization and processing and
+              automatically tracks the provenance history of thousands of data
+              objects. Here, brainlife.io is described and evaluated for
+              validity, reliability, reproducibility, replicability and
+              scientific utility using four data modalities and 3,200
+              participants.",
+  month    =  may,
+  year     =  2024,
+  language = "en",
+  DOI      = "https://doi.org/10.1038/s41592-024-02237-2"
+}
+
+
+@ARTICLE{Cieslak2021-ic,
+  title     = "{QSIPrep}: an integrative platform for preprocessing and
+               reconstructing diffusion {MRI} data",
+  author    = "Cieslak, Matthew and Cook, Philip A and He, Xiaosong and Yeh,
+               Fang-Cheng and Dhollander, Thijs and Adebimpe, Azeez and Aguirre,
+               Geoffrey K and Bassett, Danielle S and Betzel, Richard F and
+               Bourque, Josiane and Cabral, Laura M and Davatzikos, Christos and
+               Detre, John A and Earl, Eric and Elliott, Mark A and Fadnavis,
+               Shreyas and Fair, Damien A and Foran, Will and Fotiadis,
+               Panagiotis and Garyfallidis, Eleftherios and Giesbrecht, Barry
+               and Gur, Ruben C and Gur, Raquel E and Kelz, Max B and Keshavan,
+               Anisha and Larsen, Bart S and Luna, Beatriz and Mackey, Allyson P
+               and Milham, Michael P and Oathes, Desmond J and Perrone, Anders
+               and Pines, Adam R and Roalf, David R and Richie-Halford, Adam and
+               Rokem, Ariel and Sydnor, Valerie J and Tapera, Tinashe M and
+               Tooley, Ursula A and Vettel, Jean M and Yeatman, Jason D and
+               Grafton, Scott T and Satterthwaite, Theodore D",
+  journal   = "Nat. Methods",
+  publisher = "Nature Publishing Group",
+  pages     = "1--4",
+  abstract  = "Diffusion-weighted magnetic resonance imaging (dMRI) is the
+               primary method for noninvasively studying the organization of
+               white matter in the human brain. Here we introduce QSIPrep, an
+               integrative software platform for the processing of diffusion
+               images that is compatible with nearly all dMRI sampling schemes.
+               Drawing on a diverse set of software suites to capitalize on
+               their complementary strengths, QSIPrep facilitates the
+               implementation of best practices for processing of diffusion
+               images. QSIPrep is a software platform for processing of most
+               diffusion MRI datasets and ensures that adequate workflows are
+               used.",
+  month     =  jun,
+  year      =  2021,
+  language  = "en",
+  DOI       = "https://doi.org/10.1038/s41592-021-01185-5"
+}
+
+
+@ARTICLE{Tournier2019-cq,
+  title    = "{MRtrix3}: A fast, flexible and open software framework for
+              medical image processing and visualisation",
+  author   = "Tournier, J-Donald and Smith, Robert and Raffelt, David and
+              Tabbara, Rami and Dhollander, Thijs and Pietsch, Maximilian and
+              Christiaens, Daan and Jeurissen, Ben and Yeh, Chun-Hung and
+              Connelly, Alan",
+  journal  = "Neuroimage",
+  volume   =  202,
+  pages    =  116137,
+  abstract = "MRtrix3 is an open-source, cross-platform software package for
+              medical image processing, analysis and visualisation, with a
+              particular emphasis on the investigation of the brain using
+              diffusion MRI. It is implemented using a fast, modular and
+              flexible general-purpose code framework for image data access and
+              manipulation, enabling efficient development of new applications,
+              whilst retaining high computational performance and a consistent
+              command-line interface between applications. In this article, we
+              provide a high-level overview of the features of the MRtrix3
+              framework and general-purpose image processing applications
+              provided with the software.",
+  month    =  nov,
+  year     =  2019,
+  keywords = "Image; MRI; Processing; Software; Visualisation",
+  language = "en",
+  DOI      = "https://doi.org/10.1016/j.neuroimage.2019.116137"
+}
+
+
+@ARTICLE{Avants2014-ci,
+  title    = "The Insight {ToolKit} image registration framework",
+  author   = "Avants, Brian B and Tustison, Nicholas J and Stauffer, Michael and
+              Song, Gang and Wu, Baohua and Gee, James C",
+  journal  = "Front. Neuroinform.",
+  volume   =  8,
+  pages    =  44,
+  abstract = "Publicly available scientific resources help establish evaluation
+              standards, provide a platform for teaching and improve
+              reproducibility. Version 4 of the Insight ToolKit (ITK(4)) seeks
+              to establish new standards in publicly available image
+              registration methodology. ITK(4) makes several advances in
+              comparison to previous versions of ITK. ITK(4) supports both
+              multivariate images and objective functions; it also unifies
+              high-dimensional (deformation field) and low-dimensional (affine)
+              transformations with metrics that are reusable across transform
+              types and with composite transforms that allow arbitrary series of
+              geometric mappings to be chained together seamlessly. Metrics and
+              optimizers take advantage of multi-core resources, when available.
+              Furthermore, ITK(4) reduces the parameter optimization burden via
+              principled heuristics that automatically set scaling across
+              disparate parameter types (rotations vs. translations). A related
+              approach also constrains steps sizes for gradient-based
+              optimizers. The result is that tuning for different metrics and/or
+              image pairs is rarely necessary allowing the researcher to more
+              easily focus on design/comparison of registration strategies. In
+              total, the ITK(4) contribution is intended as a structure to
+              support reproducible research practices, will provide a more
+              extensive foundation against which to evaluate new work in image
+              registration and also enable application level programmers a broad
+              suite of tools on which to build. Finally, we contextualize this
+              work with a reference registration evaluation study with
+              application to pediatric brain labeling.",
+  month    =  apr,
+  year     =  2014,
+  keywords = "MRI; brain; death; open-source; registration",
+  language = "en",
+  DOI      = "https://doi.org/10.3389/fninf.2014.00044"
+}
+
+
+@ARTICLE{Garyfallidis2014-el,
+  title    = "Dipy, a library for the analysis of diffusion {MRI} data",
+  author   = "Garyfallidis, Eleftherios and Brett, Matthew and Amirbekian,
+              Bagrat and Rokem, Ariel and van der Walt, Stefan and Descoteaux,
+              Maxime and Nimmo-Smith, Ian and {Dipy Contributors}",
+  journal  = "Front. Neuroinform.",
+  volume   =  8,
+  pages    =  8,
+  abstract = "Diffusion Imaging in Python (Dipy) is a free and open source
+              software project for the analysis of data from diffusion magnetic
+              resonance imaging (dMRI) experiments. dMRI is an application of
+              MRI that can be used to measure structural features of brain white
+              matter. Many methods have been developed to use dMRI data to model
+              the local configuration of white matter nerve fiber bundles and
+              infer the trajectory of bundles connecting different parts of the
+              brain. Dipy gathers implementations of many different methods in
+              dMRI, including: diffusion signal pre-processing; reconstruction
+              of diffusion distributions in individual voxels; fiber
+              tractography and fiber track post-processing, analysis and
+              visualization. Dipy aims to provide transparent implementations
+              for all the different steps of dMRI analysis with a uniform
+              programming interface. We have implemented classical signal
+              reconstruction techniques, such as the diffusion tensor model and
+              deterministic fiber tractography. In addition, cutting edge novel
+              reconstruction techniques are implemented, such as constrained
+              spherical deconvolution and diffusion spectrum imaging (DSI) with
+              deconvolution, as well as methods for probabilistic tracking and
+              original methods for tractography clustering. Many additional
+              utility functions are provided to calculate various statistics,
+              informative visualizations, as well as file-handling routines to
+              assist in the development and use of novel techniques. In contrast
+              to many other scientific software projects, Dipy is not being
+              developed by a single research group. Rather, it is an open
+              project that encourages contributions from any scientist/developer
+              through GitHub and open discussions on the project mailing list.
+              Consequently, Dipy today has an international team of
+              contributors, spanning seven different academic institutions in
+              five countries and three continents, which is still growing.",
+  month    =  feb,
+  year     =  2014,
+  keywords = "DSI; DTI; HARDI; Python; dMRI; diffusion MRI; free open source
+              software; tractography",
+  DOI      = "https://doi.org/10.3389/fninf.2014.00008"
+}
+
+
+@ARTICLE{Legarreta2026Gigascience,
+  title     = "What needs to be standardized for reliable, reproducible, and
+               robust tractography?",
+  author    = "Legarreta, Jon Haitz and Schiavi, Simona and Tang, Wei and Banks,
+               Garrett and Cieslak, Matthew and Schilling, Kurt and De Luca,
+               Alberto and Tournier, Jacques-Donald and Kruper, John and
+               Rheault, Francois and Sotiropoulos, Stamatios N and Pestilli,
+               Franco and Veraart, Jelle and Yang, Joseph Yuan-Mou and
+               Descoteaux, Maxime and Heilbronner, Sarah and Rokem, Ariel",
+  journal   = "Gigascience",
+  publisher = "Oxford University Press (OUP)",
+  volume    =  15,
+  number    = "giag034",
+  pages     = "giag034",
+  abstract  = "Tractography is a key component of efforts to map brain
+               connectivity. As a rapidly evolving field of neuroscience,
+               current tractography methods are diverse, often varying across
+               research laboratories and different software pipelines.
+               Therefore, it suffers from a lack of standardization, leading to
+               inconsistencies in results, which can limit reproducibility and
+               affect the robustness needed for research and clinical
+               applications of these methods. Variability in data acquisition
+               procedures, inconsistencies in spatial referencing schemes and
+               implementations, and anatomical heterogeneity-at the individual
+               level, across the lifespan, and across species-hinder comparative
+               analyses. Additionally, the lack of consensus on best practices
+               complicates the development of robust automated quality control
+               pipelines and limits the clinical translation of
+               tractography-based procedures. Establishing standardized
+               protocols for acquisition, preprocessing, and tractography
+               reconstruction is critical toward enabling reliable
+               tract-specific analyses, facilitating cross-study harmonization,
+               and supporting replicable large-scale population studies. The
+               present article provides an overview of the current challenges in
+               tractography standardization and identifies the key aspects that
+               require standardization for reliable, reproducible, and robust
+               tractography.",
+  month     =  jan,
+  year      =  2026,
+  keywords  = "brain connectivity; computational neuroimaging; neuroanatomy;
+               standardization; tractography; white matter",
+  language  = "en"
+}
+
+
+@ARTICLE{Kruper2024HCP,
+  title     = "Tractometry of the Human Connectome Project: resources and
+               insights",
+  author    = "Kruper, John and Hagen, Mckenzie P and Rheault, François and
+               Crane, Isaac and Gilmore, Asa and Narayan, Manjari and Motwani,
+               Keshav and Lila, Eardi and Rorden, Chris and Yeatman, Jason D and
+               Rokem, Ariel",
+  journal   = "Front. Neurosci.",
+  publisher = "Frontiers Media SA",
+  volume    =  18,
+  pages     =  1389680,
+  abstract  = "Introduction: The Human Connectome Project (HCP) has become a
+               keystone dataset in human neuroscience, with a plethora of
+               important applications in advancing brain imaging methods and an
+               understanding of the human brain. We focused on tractometry of
+               HCP diffusion-weighted MRI (dMRI) data. Methods: We used an
+               open-source software library (pyAFQ;
+               https://yeatmanlab.github.io/pyAFQ) to perform probabilistic
+               tractography and delineate the major white matter pathways in the
+               HCP subjects that have a complete dMRI acquisition (n = 1,041).
+               We used diffusion kurtosis imaging (DKI) to model white matter
+               microstructure in each voxel of the white matter, and extracted
+               tract profiles of DKI-derived tissue properties along the length
+               of the tracts. We explored the empirical properties of the data:
+               first, we assessed the heritability of DKI tissue properties
+               using the known genetic linkage of the large number of twin pairs
+               sampled in HCP. Second, we tested the ability of tractometry to
+               serve as the basis for predictive models of individual
+               characteristics (e.g., age, crystallized/fluid intelligence,
+               reading ability, etc.), compared to local connectome features. To
+               facilitate the exploration of the dataset we created a new
+               web-based visualization tool and use this tool to visualize the
+               data in the HCP tractometry dataset. Finally, we used the HCP
+               dataset as a test-bed for a new technological innovation: the TRX
+               file-format for representation of dMRI-based streamlines.
+               Results: We released the processing outputs and tract profiles as
+               a publicly available data resource through the AWS Open Data
+               program's Open Neurodata repository. We found heritability as
+               high as 0.9 for DKI-based metrics in some brain pathways. We also
+               found that tractometry extracts as much useful information about
+               individual differences as the local connectome method. We
+               released a new web-based visualization tool for
+               tractometry-``Tractoscope'' (https://nrdg.github.io/tractoscope).
+               We found that the TRX files require considerably less disk
+               space-a crucial attribute for large datasets like HCP. In
+               addition, TRX incorporates a specification for grouping
+               streamlines, further simplifying tractometry analysis.",
+  month     =  jun,
+  year      =  2024,
+  keywords  = "MRI; Open Data; brain; data visualization; diffusion MRI;
+               heritability; predictive modeling; tractometry",
+  language  = "en"
+}
