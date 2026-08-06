@@ -41,6 +41,13 @@ software
 ```
 ````
 
+````{dropdown} Benchmarks
+
+```{toctree}
+benchmarks
+```
+````
+
 ````{dropdown} Bibliography
 
 ```{toctree}
