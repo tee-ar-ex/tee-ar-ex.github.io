@@ -41,6 +41,13 @@ software
 ```
 ````
 
+````{dropdown} Python Showcase
+
+```{toctree}
+showcase
+```
+````
+
 ````{dropdown} Bibliography
 
 ```{toctree}
