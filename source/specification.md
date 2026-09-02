@@ -137,10 +137,10 @@ OHBM_demo.trx
 ## Example code
 
 ```python
-from trx_file_memmap import TrxFile, load, save
+from trx.trx_file_memmap import TrxFile, load, save
 import numpy as np
 
-trx = load('complete_big_v5.trx')
+trx = load('complete_tractogram.trx')
 
 # Access the header (dict) / streamlines (ArraySequences)
 trx.header
