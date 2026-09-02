@@ -60,3 +60,7 @@ history
 bib
 ```
 ````
+
+## Acknowledgments
+
+Development of TRX was supported by [NIMH grant 1R01MH126699](https://reporter.nih.gov/search/D-c1NJBQFE-BkwP1Cxc2Lg/project-details/10253558).
