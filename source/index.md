@@ -17,28 +17,29 @@ and scientists. Our long-term plan is to integrate TRX within the [Brain
 Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem
 {cite:p}`Gorgolewski2016BIDS`.
 
-
-````{dropdown} Concepts & Specification
-
+::::{grid} 2
+:::{grid-item-card}  TRX fundamentals
 ```{toctree}
+:maxdepth: 1
 concepts
 specification
 ```
-````
+:::
+:::{grid-item-card}  Software implementations
+```{toctree}
+:maxdepth: 1
+software
+```
+:::
+::::
 
-````{dropdown} Design & History
+````{dropdown} Design and history
 
 ```{toctree}
 design
 history
 ```
-````
 
-````{dropdown} Software
-
-```{toctree}
-software
-```
 ````
 
 ````{dropdown} Benchmarks
@@ -59,4 +60,5 @@ showcase
 ```{toctree}
 bib
 ```
+
 ````
