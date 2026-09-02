@@ -6,50 +6,57 @@ bibliography:
 # TRX: A community-oriented file format for tractography
 
 Welcome to the documentation of the TRX file format (pronounced "tee-ar-ex" or
-"tracks").
+"tracks"). The goal of TRX is to support use of computational tractography by
+providing a simple, computationally-efficient and extensible standard. It is
+designed to be future-proof, with very large datasets and high-resolution
+acqusitions in mind. It is designed to provide a minimal container for simple
+applications, as well as to support sophisticated data analysis workflows.
 
-The goal of TRX is to become the standard file format for tractography. As with
-other file formats like [NIfTI](https://nifti-imaging.github.io/), we believe
-that TRX will serve the community well and the growing computational needs of
-our field. We encourage community members to consider early contributions to
-our proposal so as to ensure the new standard will cover the needs of the wider
-audience of software developers, toolboxes, and scientists.
+We believe that TRX will serve the tractography research community and the
+growing computational needs of our field well into the future.
 
-We are currently also [working](https://github.com/bids-standard/bids-specification/pull/2333)
-to integrate TRX within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem
-{cite:p}`Gorgolewski2016BIDS`.
+:::{note} Join us!
+  We are currently [working](https://github.com/bids-standard/bids-specification/pull/2333)
+  to integrate TRX within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem {cite:p}`Gorgolewski2016BIDS`. We would appreciate suggestions and comments from
+  members of the community.
+:::
 
 ::::{grid} 2
 :::{grid-item-card}  TRX fundamentals
 ```{toctree}
 :maxdepth: 1
-concepts
 specification
+concepts
 ```
 :::
-:::{grid-item-card}  Software implementations
+:::{grid-item-card}  Software support and examples
 ```{toctree}
-:maxdepth: 1
-software
+:maxdepth: 2
 showcase
-benchmarks
+software
 ```
 :::
 ::::
 
-````{dropdown} Design and history
 
+::::{grid} 2
+:::{grid-item-card} Benchmarks
 ```{toctree}
+:maxdepth: 2
+benchmarks
+```
+:::
+:::{grid-item-card} Motivation design and history
+```{toctree}
+:maxdepth: 2
 design
 history
 ```
-
-````
+:::
+::::
 
 ````{dropdown} Bibliography
-
 ```{toctree}
 bib
 ```
-
 ````
