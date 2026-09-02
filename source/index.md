@@ -41,6 +41,12 @@ software
 ```
 ````
 
+````{dropdown} Benchmarks
+
+```{toctree}
+benchmarks
+``` 
+
 ````{dropdown} Python Showcase
 
 ```{toctree}
