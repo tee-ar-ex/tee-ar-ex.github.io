@@ -8,13 +8,15 @@ bibliography:
 Welcome to the documentation of the TRX file format (pronounced "tee-ar-ex" or
 "tracks").
 
-The goal of TRX is to become the standard file format. As with other file
-formats like NIfTI, we believe that TRX will serve the community well and the
-growing computational needs of our field. We encourage community members to
-consider early contributions to our proposal so as to ensure the new standard
-will cover the needs of the wider audience of software developers, toolboxes,
-and scientists. Our long-term plan is to integrate TRX within the [Brain
-Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem
+The goal of TRX is to become the standard file format for tractography. As with
+other file formats like [NIfTI](https://nifti-imaging.github.io/), we believe
+that TRX will serve the community well and the growing computational needs of
+our field. We encourage community members to consider early contributions to
+our proposal so as to ensure the new standard will cover the needs of the wider
+audience of software developers, toolboxes, and scientists.
+
+We are currently also [working](https://github.com/bids-standard/bids-specification/pull/2333)
+to integrate TRX within the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) ecosystem
 {cite:p}`Gorgolewski2016BIDS`.
 
 ::::{grid} 2

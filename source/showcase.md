@@ -3,7 +3,7 @@ bibliography:
   - references.bib
 ---
 
-# Python Showcase and Example Usage
+# Showcase and Example Usage (in Python)
 
 This showcase demonstrates practical, scalable tractography workflows using the
 `trx-python` library. Rather than treating tractograms
