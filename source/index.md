@@ -29,7 +29,7 @@ specification
 concepts
 ```
 :::
-:::{grid-item-card}  Software support and examples
+:::{grid-item-card}  Examples and software support
 ```{toctree}
 :maxdepth: 2
 showcase
