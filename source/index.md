@@ -29,6 +29,8 @@ specification
 ```{toctree}
 :maxdepth: 1
 software
+showcase
+benchmarks
 ```
 :::
 ::::
@@ -40,19 +42,6 @@ design
 history
 ```
 
-````
-
-````{dropdown} Benchmarks
-
-```{toctree}
-benchmarks
-``` 
-
-````{dropdown} Python Showcase
-
-```{toctree}
-showcase
-```
 ````
 
 ````{dropdown} Bibliography
