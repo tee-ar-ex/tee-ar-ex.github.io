@@ -1,5 +1,5 @@
 """
-Assembling Tractograms: Batch Concatenation vs Incremental vs Pre-allocated Memmaps.
+Assembling Tractograms: Batch Concatenation vs Incremental vs Pre-allocated.
 
 Requirements:
     pip install trx-python numpy
@@ -26,7 +26,9 @@ logging.info("Loading reference tractogram '%s'...", filename)
 trx = load(filename)
 chunk_len = len(trx.streamlines)
 chunk_pts = len(trx.streamlines._data)
-logging.info("Reference chunk: %d streamlines, %d vertices", chunk_len, chunk_pts)
+logging.info(
+    "Reference chunk: %d streamlines, %d vertices", chunk_len, chunk_pts
+)
 
 # --- Strategy 1: Batch concatenation (known input list) ---
 logging.info("--- Strategy 1: Batch concatenation (known input list) ---")
@@ -42,7 +44,9 @@ logging.info(
 )
 
 # --- Strategy 2: Naive incremental append (dynamic reallocation) ---
-logging.info("--- Strategy 2: Naive incremental append (dynamic reallocation) ---")
+logging.info(
+    "--- Strategy 2: Naive incremental append (dynamic reallocation) ---"
+)
 append_trx = load(filename)
 timer = time()
 append_durations = []
@@ -60,7 +64,9 @@ logging.info(
 )
 
 # --- Strategy 3: Pre-allocated memory map append (recommended) ---
-logging.info("--- Strategy 3: Pre-allocated memory map append (recommended) ---")
+logging.info(
+    "--- Strategy 3: Pre-allocated memory map append (recommended) ---"
+)
 max_streamlines = 10_000_000
 max_vertices = 500_000_000
 
@@ -73,7 +79,8 @@ alloc_trx = TrxFile(
 )
 alloc_init_time = time() - timer
 logging.info(
-    "Pre-allocated buffer capacity: %d streamlines, %d vertices (init: %.4fs, RAM: ~0 MB)",
+    "Pre-allocated buffer capacity: %d streamlines, %d vertices "
+    "(init: %.4fs, RAM: ~0 MB)",
     max_streamlines,
     max_vertices,
     alloc_init_time,
@@ -97,7 +104,7 @@ logging.info(
     np.mean(prealloc_durations),
 )
 logging.info(
-    "Buffer state before resize: allocated capacity = %d, real data count = %d",
+    "Buffer state before resize: allocated = %d, real data count = %d",
     max_streamlines,
     real_strs,
 )

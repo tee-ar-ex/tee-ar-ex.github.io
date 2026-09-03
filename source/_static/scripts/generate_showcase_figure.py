@@ -4,12 +4,15 @@ Render Showcase tractography figures using FURY.
 
 Reproduces:
 1. The hero whole-brain ensemble tractogram (`whole_brain.png`).
-2. The four tracking algorithm bundle figures (`DTI.png`, `EUDX.png`, `DET.png`, `prob.png`).
+2. The four tracking algorithm bundle figures:
+   `DTI.png`, `EUDX.png`, `DET.png`, `prob.png`.
 
 Features:
 - Streamlines loaded from TRX (whole-brain and bundle groups).
-- Non-transparent streamlines (opacity=1.0) with endpoint-based orientation coloring.
-- Axial and mid-sagittal reference anatomy slices (FA) rendered with FURY slicers.
+- Non-transparent streamlines (opacity=1.0) with endpoint-based orientation
+  coloring.
+- Axial and mid-sagittal reference anatomy slices (FA) rendered with FURY
+  slicers.
 - Programmatic camera configuration matching the oblique lateral view.
 - Clean offscreen rendering to PNG.
 
@@ -17,7 +20,8 @@ Requirements:
     pip install trx-python dipy fury nibabel numpy
 
 Usage:
-    python generate_showcase_figure.py in_trx in_img [--out_dir OUT_DIR] [--nb_streamlines NB]
+    python generate_showcase_figure.py in_trx in_img \\
+        [--out_dir OUT_DIR] [--nb_streamlines NB]
 """
 
 import argparse
@@ -84,7 +88,9 @@ def render_whole_brain(
     )
     streamlines_actor = actor.line(streamlines, opacity=1.0, linewidth=0.7)
 
-    scene = create_base_scene(fa_data, affine, z_slice=z_slice, x_slice=x_slice)
+    scene = create_base_scene(
+        fa_data, affine, z_slice=z_slice, x_slice=x_slice
+    )
     scene.add(streamlines_actor)
 
     logging.info("Saving whole-brain snapshot to: %s", output_path)
@@ -102,8 +108,12 @@ def render_algo_bundles(
     x_slice: int = 58,
     resolution: tuple = (1068, 755),
 ):
-    """Render bundle groups for a tracking algorithm using endpoint coloring."""
-    logging.info("Extracting %s bundle streamlines (algo code %d)...", algo_name, algo_code)
+    """Render bundle groups for a tracking algorithm with endpoint coloring."""
+    logging.info(
+        "Extracting %s bundle streamlines (algo code %d)...",
+        algo_name,
+        algo_code,
+    )
 
     all_grp_indices = np.concatenate(
         [trx.groups[k] for k in trx.groups.keys() if len(trx.groups[k]) > 0]
@@ -115,21 +125,28 @@ def render_algo_bundles(
     sub_indices = np.intersect1d(unique_grp_indices, idx_algo)
 
     if len(sub_indices) == 0:
-        logging.warning("No bundle streamlines found for algo %d (%s).", algo_code, algo_name)
+        logging.warning(
+            "No bundle streamlines found for algo %d (%s).",
+            algo_code,
+            algo_name,
+        )
         return
 
     sub_trx = trx.select(sub_indices)
     streamlines = [s.astype(np.float32) for s in sub_trx.streamlines]
     logging.info(
-        "Rendering %d %s bundle streamlines (endpoint coloring, opacity=1.0)...",
+        "Rendering %d %s bundle streamlines "
+        "(endpoint coloring, opacity=1.0)...",
         len(streamlines),
         algo_name,
     )
 
-    # In FURY, colors=None automatically uses endpoint-based line_colors(streamlines)
+    # In FURY, colors=None automatically uses endpoint-based line_colors
     streamlines_actor = actor.line(streamlines, opacity=1.0, linewidth=1.0)
 
-    scene = create_base_scene(fa_data, affine, z_slice=z_slice, x_slice=x_slice)
+    scene = create_base_scene(
+        fa_data, affine, z_slice=z_slice, x_slice=x_slice
+    )
     scene.add(streamlines_actor)
 
     logging.info("Saving %s snapshot to: %s", algo_name, output_path)
@@ -143,11 +160,11 @@ def _build_arg_parser():
     )
     p.add_argument(
         "in_trx",
-        help="Path to input TRX tractogram file (e.g. complete_tractogram.trx).",
+        help="Path to input TRX tractogram (e.g. complete_tractogram.trx).",
     )
     p.add_argument(
         "in_img",
-        help="Path to reference FA / anatomical NIfTI image (e.g. fa.nii.gz).",
+        help="Path to reference FA / anatomical NIfTI (e.g. fa.nii.gz).",
     )
     p.add_argument(
         "--out_dir",
@@ -206,7 +223,7 @@ def main():
         x_slice=args.x_slice,
     )
 
-    # 2. Four algorithm bundle figures (if groups and algo metadata are present)
+    # 2. Four algorithm bundle figures (if groups and algo metadata present)
     if len(trx.groups) > 0 and "algo" in trx.data_per_streamline:
         algos = [
             (1, "DTI", "DTI.png"),

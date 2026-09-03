@@ -37,12 +37,12 @@ logging.info(
     len(new_trx.streamlines._data),
 )
 
-# Step 2: Expand buffer capacity to 1,000,000 without altering existing valid data
+# Step 2: Expand buffer capacity to 1,000,000 without altering valid data
 logging.info("Step 2: Expanding buffer capacity to 1,000,000 streamlines...")
 new_trx.resize(nb_streamlines=1_000_000)
 real_strs, real_pts = new_trx._get_real_len()
 logging.info(
-    "After capacity expansion: allocated buffer capacity = %d, valid data count = %d",
+    "After capacity expansion: allocated = %d, valid data count = %d",
     new_trx.header["NB_STREAMLINES"],
     real_strs,
 )
