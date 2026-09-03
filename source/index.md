@@ -63,7 +63,6 @@ bib
 
 ## Acknowledgments
 
-Development of TRX was supported by [NIMH grant
-1R01MH126699](https://reporter.nih.gov/search/D-c1NJBQFE-BkwP1Cxc2Lg/project-details/10253558),
+Development of TRX was supported by [NIMH grant 1R01MH126699](https://reporter.nih.gov/search/D-c1NJBQFE-BkwP1Cxc2Lg/project-details/10253558),
 and by the Natural Sciences and Engineering Research Council of Canada (NSERC),
 Discovery Grants Program – Individual, [grant RGPIN-2023-04179](https://nserc-crsng.canada.ca/en/awards-database/808048).
