@@ -1,10 +1,10 @@
 # TRX Specification
 
-This page defines the TRX file format specification. The authoritative
-specification is maintained in the
-[trx-spec](https://github.com/tee-ar-ex/trx-spec) repository.
+This page describes the TRX file format specification. The authoritative specification is maintained in the [trx-spec](https://github.com/tee-ar-ex/trx-spec) repository. For more explanations
+of the concepts underlying this specification, refer to {doc}`concepts`.
+To learn more about the motivation for TRX, refer to {doc}`design`.
 
-## General
+## General description
 
 - Uncompressed ZIP file or simple folder architecture
 - File architecture describes the data

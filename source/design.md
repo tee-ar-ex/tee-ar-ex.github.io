@@ -1,4 +1,4 @@
-# Design Rationale
+# Why TRX?
 
 This page explains the motivation and design decisions behind the TRX file
 format. The TRX emerged from a
