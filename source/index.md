@@ -24,8 +24,7 @@ growing computational needs of our field well into the future.
 ::::{grid} 2
 :::{grid-item-card}  TRX fundamentals
 ```{toctree}
-:maxdepth: 1
-specification
+:maxdepth: 2
 concepts
 ```
 :::
