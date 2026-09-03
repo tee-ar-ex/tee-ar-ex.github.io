@@ -31,7 +31,7 @@ concepts
 :::
 :::{grid-item-card}  Examples and software support
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 showcase
 software
 ```
@@ -55,11 +55,9 @@ history
 :::
 ::::
 
-````{dropdown} Bibliography
 ```{toctree}
 bib
 ```
-````
 
 ## Acknowledgments
 
