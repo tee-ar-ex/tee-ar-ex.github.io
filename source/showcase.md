@@ -57,6 +57,12 @@ CSD (DET), and Probabilistic Particle Filtering CSD (PROB).
 :::
 ::::
 
+The showcase figures (the whole-brain ensemble and the tracking algorithm
+bundles above) are rendered programmatically using FURY with axial and
+mid-sagittal reference slices. The figure generation script is available on
+[GitHub](https://github.com/tee-ar-ex/tee-ar-ex.github.io/blob/main/source/_static/scripts/generate_showcase_figure.py)
+in the `source/_static/scripts/` folder.
+
 Because tracking algorithm identifiers (`algo`) and Convex Optimization Modeling
 for Microstructure Informed Tractography (COMMIT) signal weights (`commit_weights`)
 {cite:p}`Daducci2014COMMIT` are stored in independent Data Per Streamline (DPS)
@@ -79,7 +85,8 @@ using sparse index sets stored in groups.
   `pip install trx-python dipy`
 - **Download Dataset**: The whole-brain demonstration file (`complete_tractogram.trx`)
   can be downloaded directly from [Google Drive](https://drive.google.com/drive/folders/1F8UmJRwXlMIyVJ0mbkKsFyiz5T63ZwfA?usp=sharing).
-- **Download Python Scripts**:
+- **Download Python Scripts** (also available in the repository on [GitHub](https://github.com/tee-ar-ex/tee-ar-ex.github.io/tree/main/source/_static/scripts)):
+  - {download}`generate_showcase_figure.py <_static/scripts/generate_showcase_figure.py>`: FURY figure rendering script with programmatic camera and dual anatomical slices.
   - {download}`showcase_filtering.py <_static/scripts/showcase_filtering.py>`: Metadata-driven filtering and group extraction.
   - {download}`showcase_concatenation.py <_static/scripts/showcase_concatenation.py>`: Tractogram concatenation and assembly strategies.
   - {download}`showcase_resizing.py <_static/scripts/showcase_resizing.py>`: Pre-allocated memory map buffer management and resizing.
@@ -112,6 +119,15 @@ arrays. In TRX, metadata is organized across independent binary arrays:
 Because these arrays are stored independently in the ZIP container, filtering
 queries can be evaluated directly on 1D NumPy arrays without touching the
 multi-gigabyte geometry array.
+
+This layout would also simplify quality control (QC) and outlier filtering.
+Users could store streamline quality scores or pass/fail flags in **DPS**
+(e.g., COMMIT {cite:p}`Daducci2014COMMIT` weights or TractOracle
+{cite:p}`Levesque2025TractOracle` scores), point-wise metrics in **DPV**, valid
+and rejected streamlines in separate **groups**, and bundle-level QC summaries
+in **DPG**.
+
+
 
 ### 1. Loading and inspecting tractogram metadata
 
