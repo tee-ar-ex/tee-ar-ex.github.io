@@ -33,7 +33,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Build site
       run: |
-        make html
+        make html || (cat /tmp/sphinx-err-*.log && exit 1)
     - name: Upload site
       uses: actions/upload-pages-artifact@v4
       with:

@@ -33,6 +33,7 @@ concepts
 :maxdepth: 1
 showcase
 software
+stories
 ```
 :::
 ::::
