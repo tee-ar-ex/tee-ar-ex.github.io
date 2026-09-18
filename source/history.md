@@ -28,12 +28,14 @@ through technical developments.
 
 ### Conferences and workshops
 
-- **OHBM 2021** (online) — initial presentation of the format
 - **OHBM 2022** (Glasgow) — in-person poster presentation
+
+<iframe src="https://youtube.com/embed/IYDAKNIg010"></iframe>
+
 - **OHBM 2023** — progress presented at the Open Science Room
 - **Tract Anat Retreat, Corsica, 2024** — presented and discussed at length
 - **DIPY online workshops, 2025 and 2026** — presented to trainees
-- **BRAIN CONNECTS gathering, Austin TX, 2025** — presented to the project
+- **BRAIN CONNECTS gathering, Austin TX, 2025** — presented to the CONNECTS project teams
 
 ### Institutional adoption
 

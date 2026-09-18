@@ -15,5 +15,5 @@ is enabling use-cases and new approaches that were not possible before
 
 ## Matt Cieslak: Seeing it all together with TRXViz
 
-<iframe src="https://youtu.be/ZwWXcYjBIxc" title="Matt Cieslak: Seeing it all together with TRXViz"></iframe>
+<iframe src="https://youtube.com/embed/ZwWXcYjBIxc" title="Matt Cieslak: Seeing it all together with TRXViz"></iframe>
 
