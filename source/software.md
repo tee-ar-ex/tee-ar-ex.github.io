@@ -20,7 +20,33 @@ streamlines, and connectomes {cite:p}`Rorden2025-zq`.
 processing of diffusion-MRI based tractography. Implemented in Rust, it
 supports fast visualization and basic processing of TRX-based tractography.
 
-## Tractography generation and processing
+## Tractography generation libaries
+
+### DIPY
+
+[DIPY](https://dipy.org/) is a library for the analysis of diffusion MRI
+data {cite:p}`Garyfallidis2014-el`. DIPY supports I/O in many different
+file formats, including TRX. See [this PR](https://github.com/dipy/dipy/pull/3587)
+
+### FSL
+
+[FSL](https://fsl.fmrib.ox.ac.uk/fsl/) is a comprehensive library of tools
+for functional MRI, structural MRI, and diffusion MRI analysis. The FSLeyes
+viewer includes support for TRX as of its 1.20 version release. See [this PR](https://git.fmrib.ox.ac.uk/fsl/fsleyes/fsleyes/-/merge_requests/504).
+
+### MRtrix
+
+[MRtrix3](https://www.mrtrix.org/) is a fast, flexible and open software
+framework for medical image processing and visualisation {cite:p}`Tournier2019-cq`.
+Integration of TRX support is currently in progress (in [this PR](https://github.com/MRtrix3/mrtrix3/pull/3415)).
+
+### Trekker
+
+Trekker implements parallel transport tractography for generating geometrically
+smooth streamlines {cite:p}`Aydogan2021-ug`. It uses the TRX C++ implementation
+for I/O.
+
+## Tractography processing and analysis tools
 
 ### pyAFQ
 
@@ -29,18 +55,6 @@ white matter tractography and tractometry. It uses TRX to parallelize and
 accelerate tractography, as well as to perform batched operations over
 groups of streamlines in ways that allow handling very large tractograms
 (>100M streamlines) on standard hardware. See [this PR](https://github.com/tractometry/pyAFQ/pull/208).
-
-### Trekker
-
-Trekker implements parallel transport tractography for generating geometrically
-smooth streamlines {cite:p}`Aydogan2021-ug`. It uses the TRX C++ implementation
-for I/O.
-
-### DIPY
-
-[DIPY](https://dipy.org/) is a library for the analysis of diffusion MRI
-data {cite:p}`Garyfallidis2014-el`. DIPY supports I/O in many different
-file formats, including TRX. See [this PR](https://github.com/dipy/dipy/pull/3587)
 
 ### QSIPrep & QSIRecon
 
@@ -56,12 +70,6 @@ SlicerDMRI is an open source diffusion MRI software, implemented as an
 extension of 3D Slicer {cite:p}`Norton2017-yz`. It now supports use of TRX,
 through its C++ implementation. See [this PR](https://github.com/SlicerDMRI/SlicerDMRI/pull/250).
 
-### FSL
-
-[FSL](https://fsl.fmrib.ox.ac.uk/fsl/) is a comprehensive library of tools
-for functional MRI, structural MRI, and diffusion MRI analysis. The FSLeyes
-viewer includes support for TRX as of its 1.20 version release. See [this PR](https://git.fmrib.ox.ac.uk/fsl/fsleyes/fsleyes/-/merge_requests/504).
-
 ### COMMIT
 
 COMMIT (Convex Optimization Modeling for Microstructure Informed Tractography)
@@ -73,12 +81,6 @@ COMMIT using its C++ implementation is currently work-in-progress (see [this PR]
 ITK is an open-source framework for image analysis. TRX has been integrated as
 an external module, making it available for users of the ANTS registration
 framework {cite:p}`Avants2014-ci`. See [this PR](https://github.com/InsightSoftwareConsortium/ITK/pull/6687).
-
-### MRtrix
-
-[MRtrix3](https://www.mrtrix.org/) is a fast, flexible and open software
-framework for medical image processing and visualisation {cite:p}`Tournier2019-cq`.
-Integration of TRX support is currently in progress (in [this PR](https://github.com/MRtrix3/mrtrix3/pull/3415)).
 
 ### ExploreDTI
 
