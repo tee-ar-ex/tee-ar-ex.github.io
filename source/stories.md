@@ -7,13 +7,13 @@ is enabling use-cases and new approaches that were not possible before
 
 ## John Kruper: scaling up pyAFQ tractometry with TRX
 
-<iframe src="https://www.youtube.com/embed/hW9F-8o1rA4" title="John Kruper: scaling up pyAFQ tractometry with TRX"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/hW9F-8o1rA4" title="John Kruper: scaling up pyAFQ tractometry with TRX"></iframe>
 
 ## Chris Rorden: Visualizing anatomical structures with niivue and real-time browser-based tractography with dwi2trx
 
-<iframe src="https://www.youtube.com/embed/OYd4T429Gq4" title="Chris Rorden: Visualizing anatomical structures with niivue and real-time browser-based tractography with dwi2trx"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/OYd4T429Gq4" title="Chris Rorden: Visualizing anatomical structures with niivue and real-time browser-based tractography with dwi2trx"></iframe>
 
 ## Matt Cieslak: Seeing it all together with TRXViz
 
-<iframe src="https://youtube.com/embed/ZwWXcYjBIxc" title="Matt Cieslak: Seeing it all together with TRXViz"></iframe>
+<iframe width="420" height="315" src="https://youtube.com/embed/ZwWXcYjBIxc" title="Matt Cieslak: Seeing it all together with TRXViz"></iframe>
 

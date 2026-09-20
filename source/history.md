@@ -30,7 +30,7 @@ through technical developments.
 
 - **OHBM 2022** (Glasgow) — in-person poster presentation
 
-<iframe src="https://youtube.com/embed/IYDAKNIg010"></iframe>
+<iframe width="420" height="315" src="https://youtube.com/embed/IYDAKNIg010"></iframe>
 
 - **OHBM 2023** — progress presented at the Open Science Room
 - **Tract Anat Retreat, Corsica, 2024** — presented and discussed at length
